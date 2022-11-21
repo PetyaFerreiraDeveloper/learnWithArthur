@@ -1,1 +1,49 @@
-<p>header works!</p>
+<header
+  class="flex justify-between items-center bg-blue-300 w-full overflow-hidden p-2"
+>
+  <div class="flex flex-col font-alternates w-3/4 md:hidden">
+    <span class="uppercase text-lg">learn the</span>
+    <span class="uppercase text-lg">weekdays</span>
+    <span class="uppercase text-lg">with Arthur</span>
+  </div>
+  <div class="hidden font-alternates w-3/4 md:block">
+    <span class="uppercase text-lg">learn the weekdays with Arthur</span>
+  </div>
+  <div class="flex items-center justify-center">
+    <nav class="hidden lg:flex">
+      <ul class="flex gap-x-3 items-center font-montserrat">
+        <li class="hover:bg-blue-400">
+          <a class="uppercase p-2" href="">Home</a>
+        </li>
+        <li class="hover:bg-blue-400">
+          <a class="uppercase p-2" href="">About</a>
+        </li>
+        <li class="hover:bg-blue-400">
+          <a class="uppercase p-2" href="">Login</a>
+        </li>
+        <li class="hover:bg-blue-400">
+          <a class="uppercase p-2 align-bottom" href="">Register</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <mat-form-field class="w-16 px-2 hover:bg-blue-400">
+      <mat-select (valueChange)="sendLang($event)" [(ngModel)]="selectedLang">
+        <mat-option selected value="EN">EN</mat-option>
+        <mat-option value="BG">BG</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button
+      mat-icon-button
+      class="example-icon w-6 h-6 lg:hidden"
+      aria-label="menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</header>
+
+
+
+

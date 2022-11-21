@@ -1,0 +1,21 @@
+.mat-select-trigger.ng-tns-c81-1 {
+  background-color: red;
+}
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+::ng-deep .mat-form-field-infix {
+    border: none;
+    padding: none;
+}
+
+::ng-deep .mat-form-field .mat-form-field-wrapper  {
+    padding: 0;
+}
+
+// ::ng-deep .mat-form-field .mat-form-field-wrapper .mat-select-value {
+//     max-width: unset;
+//     width: unset;
+// }
